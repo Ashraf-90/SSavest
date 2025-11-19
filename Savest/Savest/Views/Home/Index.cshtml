@@ -1,8 +1,335 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!-- ===== HERO (Section Only) ===== -->
+<section id="hero" class="position-relative text-white">
+    <!-- Hero Slider Background -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bg-image="/assets/images/construction-workers-sunset.jpg"></div>
+            <div class="carousel-item" data-bg-image="/assets/images/inspectors-with-sketch.jpg"></div>
+            <div class="carousel-item" data-bg-image="~/assets/images/working-with-blueprint.jpg"></div><img src="" />
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <!-- Hero Content -->
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-lg-8 col-xl-7">
+                <div class="hero-content py-5">
+                    <div class="eyebrow mb-3">Your Trusted Partner in Comprehensive Security</div>
+
+                    <h1 class="mb-3">
+                        Dependable Cooling<br>
+                        You Can Trust — Anytime,<br>
+                        Anywhere.
+                    </h1>
+
+                    <p class="lead mb-4">
+                        From property protection to event security — we offer a wide range of security
+                        services tailored individually to your needs.
+                    </p>
+
+                    <a href="#our-products" class="btn btn-outline-brand btn-lg">
+                        Explore Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ABOUT AUXA Section ===== -->
+<section id="about-savest" class="about-area">
+    <div class="container">
+        <div class="section-title mb-55">
+            <span class="sub-title">About SaVest</span>
+            <div class="clearfix"></div>
+            <div class="clearfix"></div>
+            <h3 class="title mb-35">Crafting Cooling <br> <span>Solutions</span></h3>
+            <p class="section-content">
+                SaVest is an innovative company committed to developing smart, wearable solutions
+                that enhance safety and comfort in extreme environments. Born from a deep
+                understanding of the challenges faced by outdoor workers, SaVest designs practical,
+                high-performance products tailored to real-world needs.
+            </p>
+        </div>
+        <div class="about-img pos-rel">
+            <img src="~/assets/images/working-with-blueprint.jpg" alt="">
+            <div class="about-year">
+                <h2 class="xb-odm"><span class="xbo" data-count="9">00</span></h2>
+                <p>Year of <br>Experience</p>
+            </div>
+        </div>
+        <div class="row mt-50">
+            <div class="col-xl-8 offset-xl-4">
+                <!-- <p class="section-content section-content-bottom mb-80"></p> -->
+                <div class="row mt-none-30">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 mt-30">
+                        <div class="xb-funfact text-center">
+                            <h3 class="xb-item--number xb-odm">
+                                <span class="xbo" data-count="27">00</span><span class="suffix">+</span>
+                            </h3>
+                            <h6 class="xb-item--title">Project Delivered</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 mt-30">
+                        <div class="xb-funfact text-center">
+                            <h3 class="xb-item--number xb-odm"><span class="xbo" data-count="13">00</span></h3>
+                            <h6 class="xb-item--title">Awards</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 mt-30">
+                        <div class="xb-funfact text-center">
+                            <h3 class="xb-item--number xb-odm">
+                                <span class="xbo" data-count="9">00</span>
+                                <span class="suffix">+</span>
+                            </h3>
+                            <h6 class="xb-item--title">Years Experience</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 mt-30">
+                        <div class="xb-funfact text-center">
+                            <h3 class="xb-item--number xb-odm">
+                                <span class="xbo" data-count="88">00</span>
+                                <span class="suffix">+</span>
+                            </h3>
+                            <h6 class="xb-item--title">Happy Clients</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Reliable Protection (Section Only) ===== -->
+<section id="reliable" class="py-5">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <!-- Left: two rounded images -->
+            <div class="col-lg-7 col-left">
+                <div class="img-pair">
+                    <figure class="img-frame">
+                        <img src="~/assets/images/construction-workers-sunset.jpg"
+                             alt="Construction workers at sunset">
+                    </figure>
+                    <figure class="img-frame">
+                        <img src="~/assets/images/inspectors-with-sketch.jpg" alt="Inspectors with sketch">
+                    </figure>
+                </div>
+            </div>
+
+            <!-- Right: eyebrow, title, copy, bullets -->
+            <div class="col-lg-5 col-text">
+                <div class="eyebrow">Consistent Protection, Built on Trust</div>
+
+                <h2>Reliable Protection.<br>Proven Experience.</h2>
+
+                <p class="lead mb-4">
+                    Our flagship product, ColdTouch, is a wearable cooling mask designed to protect
+                    individuals who work under the sun, reducing heat stress and improving overall wellbeing on the job.
+                </p>
+
+
+            </div>
+        </div><!-- /row -->
+    </div><!-- /container -->
+</section>
+
+<!-- ===================== SERVICE SECTION ===================== -->
+<section id="our-products" class="service-4 pos-rel">
+    <div class="container">
+        <div class="section-title section-title--dm mb-55">
+            <span class="sub-title mb-45">Our Products</span>
+            <div class="clearfix"></div>
+            <h4 class="title">
+                ColdTouch is a revolutionary wearable cooling mask designed for
+                <br> <span>individuals who work under intense sun exposure.</span>
+            </h4>
+            <span class="sub-title mb-45">Key Features</span>
+        </div>
+
+    </div>
+    <div class="services-inner pos-rel">
+        <div class="dm-service-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide dm-service">
+                    <div class="xb-item--holder">
+                        <h2 class="xb-item--title">.01 <br> Advanced cooling fabric</h2>
+                        <div class="xb-item--content">
+                            The whole community is interested in growing the FOX prize.The company is
+                            planning
+                        </div>
+                    </div>
+                    <div class="xb-item--image"><img src="~/assets/images/construction-workers-sunset.jpg" alt="Development"></div>
+                </div>
+                <div class="swiper-slide dm-service">
+                    <div class="xb-item--holder">
+                        <h2 class="xb-item--title">.02 <br> Lightweight and breathable</h2>
+                        <div class="xb-item--content">
+                            The whole community is interested in growing the FOX prize.The company is
+                            planning
+                        </div>
+                    </div>
+                    <div class="xb-item--image"><img src="~/assets/images/inspectors-with-sketch.jpg" alt="Marketing strategy"></div>
+                </div>
+                <div class="swiper-slide dm-service">
+                    <div class="xb-item--holder">
+                        <h2 class="xb-item--title">.03 <br> Comfortable ergonomic design</h2>
+                        <div class="xb-item--content">
+                            The whole community is interested in growing the FOX prize.The company is
+                            planning
+                        </div>
+                    </div>
+                    <div class="xb-item--image"><img src="~/assets/images/working-with-blueprint.jpg" alt="UI Design"></div>
+                </div>
+                <div class="swiper-slide dm-service">
+                    <div class="xb-item--holder">
+                        <h2 class="xb-item--title">.04 <br> Easy to wear for long periods</h2>
+                        <div class="xb-item--content">
+                            The whole community is interested in growing the FOX prize.The company is
+                            planning
+                        </div>
+                    </div>
+                    <div class="xb-item--image"><img src="~/assets/images/construction-workers-sunset.jpg" alt="App Design"></div>
+                </div>
+                <div class="swiper-slide dm-service">
+                    <div class="xb-item--holder">
+                        <h2 class="xb-item--title">.05 <br> Comfortable ergonomic design</h2>
+                        <div class="xb-item--content">
+                            The whole community is interested in growing the FOX prize.The company is
+                            planning
+                        </div>
+                    </div>
+                    <div class="xb-item--image"><img src="~/assets/images/inspectors-with-sketch.jpg" alt="Marketing strategy"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== CORE SERVICES ===================== -->
+<section id="who-we-are" class="service innar-service pt-125">
+    <div class="container">
+        <div class="row mt-none-30">
+            <div class="col-lg-6 mt-30">
+                <div class="section-title who-we-are-title">
+                    <span class="sub-title">Who We Are</span>
+                    <div class="clearfix"></div>
+                    <h3 class="title mb-60">Discover Our <br> <span>Capabilities</span></h3>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-30">
+                <div class="row mt-none-60 who-we-are-points">
+                    <div class="col-6 col-md-6 mt-60">
+                        <div class="xb-service pos-rel">
+                            <div class="xb-item--icon">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <h3 class="xb-item--title">Construction companies</h3>
+                            <p class="xb-item--content">
+                                I've created a user interface and user experience with
+                                some process and <br> method
+                            </p>
+                            <a class="xb-overlay" href="service-single.html"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 mt-60">
+                        <div class="xb-service pos-rel">
+                            <div class="xb-item--icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="xb-item--title">Outdoor labor teams</h3>
+                            <p class="xb-item--content">
+                                I've created a user interface and user experience with
+                                some process and <br> method
+                            </p>
+                            <a class="xb-overlay" href="service-single.html"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 mt-60">
+                        <div class="xb-service pos-rel">
+                            <div class="xb-item--icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <h3 class="xb-item--title">Security firms</h3>
+                            <p class="xb-item--content">
+                                I've created a user interface and user experience with
+                                some process and <br> method
+                            </p>
+                            <a class="xb-overlay" href="service-single.html"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 mt-60">
+                        <div class="xb-service pos-rel">
+                            <div class="xb-item--icon">
+                                <i class="bi bi-tree"></i>
+                            </div>
+                            <h3 class="xb-item--title">Agricultural and field workers</h3>
+                            <p class="xb-item--content">
+                                I've created a user interface and user experience with
+                                some process and <br> method
+                            </p>
+                            <a class="xb-overlay" href="service-single.html"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===================== OUR STORY ===================== -->
+<section id="our-story">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-7 our-story-content">
+                <div class="eyebrow mb-2">Our Story</div>
+                <h3 class="mb-4">Reliable Cooling with Clear<br>Goals and Values</h3>
+
+                <!-- Mission Section -->
+                <div class="section-title mb-4">
+                    <span class="sub-title">Mission</span>
+                    <div class="clearfix"></div>
+                </div>
+                <p class="mb-4">
+                    To provide innovative wearable solutions that protect people from
+                    harsh environmental conditions, starting with ColdTouch, the
+                    cooling mask that makes a difference.
+                </p>
+
+                <!-- Vision Section -->
+                <div class="section-title mb-4">
+                    <span class="sub-title">Vision</span>
+                    <div class="clearfix"></div>
+                </div>
+                <p class="mb-4">
+                    To become a global leader in personal climate technology,
+                    ensuring every outdoor worker can perform safely, comfortably,
+                    and efficiently.
+                </p>
+                <!-- <a href="#contact" class="btn btn-brand btn-lg">Contact Now</a> -->
+            </div>
+            <div class="col-lg-5 our-story-image">
+                <div class="story-card">
+                    <img src="~/assets/images/working-with-blueprint.jpg" alt="Security team monitoring">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
