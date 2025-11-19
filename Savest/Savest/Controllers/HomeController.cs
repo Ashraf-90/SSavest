@@ -11,6 +11,7 @@ namespace Savest.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            //Test
         }
 
         public IActionResult Index()
