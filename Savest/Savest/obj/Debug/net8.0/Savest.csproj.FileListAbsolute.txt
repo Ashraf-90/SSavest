@@ -32,3 +32,37 @@ C:\Users\mohammad.issa\OneDrive - United Development Company\Desktop\Ashraf\SSav
 C:\Users\mohammad.issa\OneDrive - United Development Company\Desktop\Ashraf\SSavest\Savest\Savest\obj\Debug\net8.0\Savest.pdb
 C:\Users\mohammad.issa\OneDrive - United Development Company\Desktop\Ashraf\SSavest\Savest\Savest\obj\Debug\net8.0\Savest.genruntimeconfig.cache
 C:\Users\mohammad.issa\OneDrive - United Development Company\Desktop\Ashraf\SSavest\Savest\Savest\obj\Debug\net8.0\ref\Savest.dll
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\bin\Debug\net8.0\appsettings.json
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\bin\Debug\net8.0\Savest.staticwebassets.runtime.json
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\bin\Debug\net8.0\Savest.staticwebassets.endpoints.json
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\bin\Debug\net8.0\Savest.exe
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\bin\Debug\net8.0\Savest.deps.json
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\bin\Debug\net8.0\Savest.runtimeconfig.json
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\bin\Debug\net8.0\Savest.dll
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\bin\Debug\net8.0\Savest.pdb
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\Savest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\Savest.AssemblyInfoInputs.cache
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\Savest.AssemblyInfo.cs
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\Savest.csproj.CoreCompileInputs.cache
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\Savest.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\Savest.RazorAssemblyInfo.cache
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\Savest.RazorAssemblyInfo.cs
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\Savest.sourcelink.json
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\scopedcss\bundle\Savest.styles.css
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\scopedcss\projectbundle\Savest.bundle.scp.css
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\Savest.dll
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\refint\Savest.dll
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\Savest.pdb
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\Savest.genruntimeconfig.cache
+C:\Users\wisdo\Documents\GitHub\SSavest\Savest\Savest\obj\Debug\net8.0\ref\Savest.dll
