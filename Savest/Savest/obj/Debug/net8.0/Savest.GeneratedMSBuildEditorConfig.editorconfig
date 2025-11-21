@@ -20,12 +20,48 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/wisdo/Documents/GitHub/SSavest/Savest/Savest/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/wisdo/Documents/GitHub/SSavest/Savest/Savest/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/wisdo/Documents/GitHub/SSavest/Savest/Savest/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wisdo/Documents/GitHub/SSavest/Savest/Savest/Views/KeyWords/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5V29yZHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wisdo/Documents/GitHub/SSavest/Savest/Savest/Views/KeyWords/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5V29yZHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wisdo/Documents/GitHub/SSavest/Savest/Savest/Views/KeyWords/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2V5V29yZHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wisdo/Documents/GitHub/SSavest/Savest/Savest/Views/MetaPages/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0YVBhZ2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wisdo/Documents/GitHub/SSavest/Savest/Savest/Views/MetaPages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0YVBhZ2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wisdo/Documents/GitHub/SSavest/Savest/Savest/Views/Pixels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl4ZWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wisdo/Documents/GitHub/SSavest/Savest/Savest/Views/Pixels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl4ZWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wisdo/Documents/GitHub/SSavest/Savest/Savest/Views/Pixels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl4ZWxzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/wisdo/Documents/GitHub/SSavest/Savest/Savest/Views/Shared/Error.cshtml]
@@ -43,6 +79,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/wisdo/Documents/GitHub/SSavest/Savest/Savest/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wisdo/Documents/GitHub/SSavest/Savest/Savest/Views/Shared/_DashboardLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYXNoYm9hcmRMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-pao7z1o6jy
 
 [C:/Users/wisdo/Documents/GitHub/SSavest/Savest/Savest/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

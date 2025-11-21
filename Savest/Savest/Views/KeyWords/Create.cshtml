@@ -1,0 +1,101 @@
+﻿@model Application.DTOs.KeyWordsDTo
+
+@{
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<div style="width: 90%;margin:auto">
+    <div class="pagetitle">
+        <h1>Create New KeyWord</h1>
+        <div class="row" style="margin-bottom: 45px;">
+            <div class="col-lg-8">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index" style="color: #012970;">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a asp-controller="KeyWords" asp-action="Index" style="color: #012970;">Meta Pages List</a></li>
+                        <li class="breadcrumb-item active"><a asp-controller="KeyWords" asp-action="Create" style="color: #012970;">Create New KeyWord</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-lg-4">
+                <a class="nav-link collapsed" asp-controller="KeyWords" asp-action="Index" style="color: #012970;">
+                    <i class="bi bi-arrow-left-square"></i>
+                    <span>Back</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <form asp-action="Create" method="post" id="Create_KeyWords_Form">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label class="control-label">En Keyword</label> <span style="color:red">*</span>
+                    <input asp-for="EnKeyword" class="form-control" id="EnKeyword_Input" />
+                    <span class="text-danger" id="EnKeyword_Alert" style="display:none">Required!</span>
+                </div>
+            </div>
+            <div class="col-lg-6" style="display:none">
+                <div class="form-group">
+                    <label class="control-label">Ar Keyword</label> <span style="color:red">*</span>
+                    <input asp-for="ArKeyword" class="form-control" style="text-align:right" id="ArKeyword_Input" value="...."/>
+                    <span class="text-danger" id="ArKeyword_Alert" style="display:none">Required!</span>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="form-group">
+                <input type="button" value="Submit" onclick="Create_KeyWords()" class="btn btn-primary" />
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<!-- Form Validation Script -->
+<script>
+    function Create_KeyWords() {
+        var EnKeyword_Input = document.getElementById('EnKeyword_Input').value.trim();
+        var EnKeyword_Alert = document.getElementById('EnKeyword_Alert');
+
+        var ArKeyword_Input = document.getElementById('ArKeyword_Input').value.trim();
+        var ArKeyword_Alert = document.getElementById('ArKeyword_Alert');
+
+
+        var valid = true;
+
+        if (EnKeyword_Input === '') { EnKeyword_Alert.style.display = 'block';  valid = false;  }
+        else {  EnKeyword_Alert.style.display = 'none'; }
+
+        if (ArKeyword_Input === '') { ArKeyword_Alert.style.display = 'block'; valid = false;  }
+        else { ArKeyword_Alert.style.display = 'none';  }
+
+
+        if (valid)
+        {
+            document.getElementById('Create_KeyWords_Form').submit();
+        }
+    }
+
+
+
+
+
+
+
+
+    document.getElementById('EnKeyword_Input').addEventListener('input', function () {
+        var EnKeyword_Alert = document.getElementById('EnKeyword_Alert');
+        if (this.value.trim() !== '') {
+            EnKeyword_Alert.style.display = 'none';
+        }
+    });
+
+    document.getElementById('ArKeyword_Input').addEventListener('input', function () {
+        var ArKeyword_Alert = document.getElementById('ArKeyword_Alert');
+        if (this.value.trim() !== '') {
+            ArKeyword_Alert.style.display = 'none';
+        }
+    });
+</script>

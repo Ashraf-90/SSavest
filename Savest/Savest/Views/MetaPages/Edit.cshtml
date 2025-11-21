@@ -1,0 +1,195 @@
+﻿@model Application.DTOs.MetaPagesDTo
+
+@{
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<div style="width: 90%;margin:auto">
+    <div class="pagetitle">
+        <h1>Edit Meta Page : @Model.Page</h1>
+        <div class="row" style="margin-bottom: 45px;">
+            <div class="col-lg-8">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index" style="color: #012970;">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a asp-controller="MetaPages" asp-action="Index" style="color: #012970;">Meta Pages List</a></li>
+                        <li class="breadcrumb-item active"><a asp-controller="MetaPages" asp-action="Edit" asp-route-id="@Model.Id" style="color: #012970;">Edit Meta Page : @Model.Page </a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-lg-4">
+                <a class="nav-link collapsed" asp-controller="MetaPages" asp-action="Index" style="color: #012970;">
+                    <i class="bi bi-arrow-left-square"></i>
+                    <span>Back</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <form asp-action="Edit" method="post" id="Edit_MetaPages_Form">
+        <input type="hidden" asp-for="Id" />
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label class="control-label">Page</label>
+                    <input asp-for="Page" class="form-control" readonly/>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label class="control-label">En Page Title</label> <span style="color:red">*</span>
+                    <input asp-for="EnPageTitle" class="form-control" id="EnPageTitle_Input" />
+                    <span class="text-danger" id="EnPageTitle_Alert" style="display:none">Required!</span>
+                </div>
+            </div>
+            <div class="col-lg-6" style="display:none">
+                <div class="form-group">
+                    <label class="control-label">Ar Page Title</label> <span style="color:red">*</span>
+                    <input asp-for="ArPageTitle" class="form-control" style="text-align:right" id="ArPageTitle_Input" />
+                    <span class="text-danger" id="ArPageTitle_Alert" style="display:none">Required!</span>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label class="control-label">En Meta Title</label> <span style="color:red">*</span>
+                    <input asp-for="EnMetaTitle" class="form-control" id="EnMetaTitle_Input" />
+                    <span class="text-danger" id="EnMetaTitle_Alert" style="display:none">Required!</span>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label class="control-label">Ar Meta Title</label> <span style="color:red">*</span>
+                    <input asp-for="ArMetaTitle" class="form-control" style="text-align:right" id="ArMetaTitle_Input" />
+                    <span class="text-danger" id="ArMetaTitle_Alert" style="display:none">Required!</span>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label class="control-label">En Meta Description</label> <span style="color:red">*</span>
+                    <textarea asp-for="EnMetaDescription" class="form-control" id="EnMetaDescription_Input"></textarea>
+                    <span class="text-danger" id="EnMetaDescription_Alert" style="display:none">Required!</span>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label class="control-label">Ar Meta Description</label> <span style="color:red">*</span>
+                    <textarea asp-for="ArMetaDescription" class="form-control" style="text-align:right" id="ArMetaDescription_Input" ></textarea>
+                    <span class="text-danger" id="ArMetaDescription_Alert" style="display:none">Required!</span>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="form-group">
+                <input type="button" value="Edit" onclick="Edit_MetaPages()" class="btn btn-primary" />
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<!-- Form Validation Script -->
+<script>
+    function Edit_MetaPages() {
+        var EnPageTitle_Input = document.getElementById('EnPageTitle_Input').value.trim();
+        var EnPageTitle_Alert = document.getElementById('EnPageTitle_Alert');
+
+        var ArPageTitle_Input = document.getElementById('ArPageTitle_Input').value.trim();
+        var ArPageTitle_Alert = document.getElementById('ArPageTitle_Alert');
+
+        var EnMetaTitle_Input = document.getElementById('EnMetaTitle_Input').value.trim();
+        var EnMetaTitle_Alert = document.getElementById('EnMetaTitle_Alert');
+
+        var ArMetaTitle_Input = document.getElementById('ArMetaTitle_Input').value.trim();
+        var ArMetaTitle_Alert = document.getElementById('ArMetaTitle_Alert');
+
+        var EnMetaDescription_Input = document.getElementById('EnMetaDescription_Input').value.trim();
+        var EnMetaDescription_Alert = document.getElementById('EnMetaDescription_Alert');
+
+        var ArMetaDescription_Input = document.getElementById('ArMetaDescription_Input').value.trim();
+        var ArMetaDescription_Alert = document.getElementById('ArMetaDescription_Alert');
+
+        var valid = true;
+
+        if (EnPageTitle_Input === '') { EnPageTitle_Alert.style.display = 'block';  valid = false;  }
+        else {  EnPageTitle_Alert.style.display = 'none'; }
+
+        if (ArPageTitle_Input === '') { ArPageTitle_Alert.style.display = 'block'; valid = false;  }
+        else { ArPageTitle_Alert.style.display = 'none';  }
+
+        if (EnMetaTitle_Input === '') { EnMetaTitle_Alert.style.display = 'block';  valid = false;  }
+        else {  EnMetaTitle_Alert.style.display = 'none'; }
+
+        if (ArMetaTitle_Input === '') { ArMetaTitle_Alert.style.display = 'block'; valid = false;  }
+        else { ArMetaTitle_Alert.style.display = 'none';  }
+
+        if (EnMetaDescription_Input === '') { EnMetaDescription_Alert.style.display = 'block';  valid = false;  }
+        else {  EnMetaDescription_Alert.style.display = 'none'; }
+
+        if (ArMetaDescription_Input === '') { ArMetaDescription_Alert.style.display = 'block'; valid = false;  }
+        else { ArMetaDescription_Alert.style.display = 'none';  }
+
+        if (valid)
+        {
+            document.getElementById('Edit_MetaPages_Form').submit();
+        }
+    }
+
+
+
+
+
+
+
+
+    document.getElementById('EnPageTitle_Input').addEventListener('input', function () {
+        var EnPageTitle_Alert = document.getElementById('EnPageTitle_Alert');
+        if (this.value.trim() !== '') {
+            EnPageTitle_Alert.style.display = 'none';
+        }
+    });
+
+    document.getElementById('ArPageTitle_Input').addEventListener('input', function () {
+        var ArPageTitle_Alert = document.getElementById('ArPageTitle_Alert');
+        if (this.value.trim() !== '') {
+            ArPageTitle_Alert.style.display = 'none';
+        }
+    });
+
+    document.getElementById('EnMetaTitle_Input').addEventListener('input', function () {
+        var EnMetaTitle_Alert = document.getElementById('EnMetaTitle_Alert');
+        if (this.value.trim() !== '') {
+            EnMetaTitle_Alert.style.display = 'none';
+        }
+    });
+
+    document.getElementById('ArMetaTitle_Input').addEventListener('input', function () {
+        var ArMetaTitle_Alert = document.getElementById('ArMetaTitle_Alert');
+        if (this.value.trim() !== '') {
+            ArMetaTitle_Alert.style.display = 'none';
+        }
+    });
+
+    document.getElementById('EnMetaDescription_Input').addEventListener('input', function () {
+        var EnMetaDescription_Alert = document.getElementById('EnMetaDescription_Alert');
+        if (this.value.trim() !== '') {
+            EnMetaDescription_Alert.style.display = 'none';
+        }
+    });
+
+    document.getElementById('ArMetaDescription_Input').addEventListener('input', function () {
+        var ArMetaDescription_Alert = document.getElementById('ArMetaDescription_Alert');
+        if (this.value.trim() !== '') {
+            ArMetaDescription_Alert.style.display = 'none';
+        }
+    });
+</script>

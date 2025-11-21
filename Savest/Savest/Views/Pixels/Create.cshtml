@@ -1,0 +1,101 @@
+﻿@model Application.DTOs.PixelsDTo
+
+@{
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<div style="width: 90%;margin:auto">
+    <div class="pagetitle">
+        <h1>Create New Pixel</h1>
+        <div class="row" style="margin-bottom: 45px;">
+            <div class="col-lg-8">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index" style="color: #012970;">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a asp-controller="Pixels" asp-action="Index" style="color: #012970;">Pixels List</a></li>
+                        <li class="breadcrumb-item active"><a asp-controller="Pixels" asp-action="Create" style="color: #012970;">Create New Pixel</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-lg-4">
+                <a class="nav-link collapsed" asp-controller="Pixels" asp-action="Index" style="color: #012970;">
+                    <i class="bi bi-arrow-left-square"></i>
+                    <span>Back</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <form asp-action="Create" method="post" id="Create_Pixels_Form">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label class="control-label">App</label> <span style="color:red">*</span>
+                    <input asp-for="PixelsApp" class="form-control" id="PixelsApp_Input" />
+                    <span class="text-danger" id="PixelsApp_Alert" style="display:none">Required!</span>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label class="control-label">Ar Keyword</label> <span style="color:red">*</span>
+                    <textarea asp-for="PixelsCode" class="form-control" id="PixelsCode_Input" ></textarea>
+                    <span class="text-danger" id="PixelsCode_Alert" style="display:none">Required!</span>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="form-group">
+                <input type="button" value="Submit" onclick="Create_Pixels()" class="btn btn-primary" />
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<!-- Form Validation Script -->
+<script>
+    function Create_Pixels() {
+        var PixelsApp_Input = document.getElementById('PixelsApp_Input').value.trim();
+        var PixelsApp_Alert = document.getElementById('PixelsApp_Alert');
+
+        var PixelsCode_Input = document.getElementById('PixelsCode_Input').value.trim();
+        var PixelsCode_Alert = document.getElementById('PixelsCode_Alert');
+
+
+        var valid = true;
+
+        if (PixelsApp_Input === '') { PixelsApp_Alert.style.display = 'block';  valid = false;  }
+        else {  PixelsApp_Alert.style.display = 'none'; }
+
+        if (PixelsCode_Input === '') { PixelsCode_Alert.style.display = 'block'; valid = false;  }
+        else { PixelsCode_Alert.style.display = 'none';  }
+
+
+        if (valid)
+        {
+            document.getElementById('Create_Pixels_Form').submit();
+        }
+    }
+
+
+
+
+
+
+
+
+    document.getElementById('PixelsApp_Input').addEventListener('input', function () {
+        var PixelsApp_Alert = document.getElementById('PixelsApp_Alert');
+        if (this.value.trim() !== '') {
+            PixelsApp_Alert.style.display = 'none';
+        }
+    });
+
+    document.getElementById('PixelsCode_Input').addEventListener('input', function () {
+        var PixelsCode_Alert = document.getElementById('PixelsCode_Alert');
+        if (this.value.trim() !== '') {
+            PixelsCode_Alert.style.display = 'none';
+        }
+    });
+</script>

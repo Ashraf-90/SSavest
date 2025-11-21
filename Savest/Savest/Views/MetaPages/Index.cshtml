@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Application.DTOs.MetaPagesDTo>
+@{
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+
+<div style="width: 90%;margin:auto">
+    <div class="pagetitle">
+        <h1>Meta Pages List</h1>
+        <div class="row mb-4">
+            <div class="col-lg-8">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a asp-controller="Admin" asp-action="Index" style="color: #012970;">Dashboard</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a asp-controller="MetaPages" asp-action="Index" style="color: #012970;">Meta Pages Lis</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <table class="table" style="font-size: 15px;text-align: center;">
+            <thead>
+                <tr>
+                    <th style="background-color: #1d1919;color: white;vertical-align: middle;">Page</th>
+                    <th style="background-color: #1d1919;color: white;vertical-align: middle;">En Page Title	</th>
+                    <th style="background-color: #1d1919;color: white;vertical-align: middle;">Ar Page Title	</th>
+                    <th style="background-color: #1d1919;color: white;vertical-align: middle;">En Meta Title	</th>
+                    <th style="background-color: #1d1919;color: white;vertical-align: middle;">Ar Meta Title</th>
+                    <th style="background-color: #1d1919;color: white;vertical-align: middle;">En Meta Description</th>
+                    <th style="background-color: #1d1919;color: white;vertical-align: middle;">Ar Meta Description</th>
+                    <th style="background-color: #1d1919;color: white;vertical-align: middle;"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var MetaPages in Model)
+                {
+                    <tr>
+                        <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.Page</td>
+                        <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.EnPageTitle</td>
+                        <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.ArPageTitle</td>
+                        <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.EnMetaTitle</td>
+                        <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.ArMetaTitle</td>
+                        <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.EnMetaDescription</td>
+                        <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.ArMetaDescription</td>
+                        <td class="text-end" style="background-color: #e9ecef;vertical-align: middle;">
+                            <a asp-action="Edit" asp-route-id="@MetaPages.Id" class="btn btn-success btn-sm me-1">Edit</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
