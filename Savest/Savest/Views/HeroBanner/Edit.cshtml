@@ -1,0 +1,148 @@
+﻿@model Application.DTOs.HeroBannerDTo
+
+@{
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<div style="width: 90%;margin:auto">
+    <div class="pagetitle">
+        <h1>Edit Hero Banner</h1>
+        <div class="row" style="margin-bottom: 45px;">
+            <div class="col-lg-8">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index" style="color: #012970;">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a asp-controller="HeroBanner" asp-action="Edit" asp-route-id="1" style="color: #012970;">Edit Hero Banner</a></li>
+                    </ol>
+                </nav>
+            </div>
+            
+        </div>
+    </div>
+
+    <form asp-action="Edit" method="post" id="Edit_HeroBanner_Form">
+        <input type="hidden" asp-for="Id" />
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <input asp-for="Text_One" class="form-control" id="Text_One_Input" />
+                    <span class="text-danger" id="Text_One_Alert" style="display:none">Required!</span>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <textarea asp-for="Text_Two" class="form-control" id="Text_Two_Input" style="height: 120px;"></textarea>
+                    <span class="text-danger" id="Text_Two_Alert" style="display:none">Required!</span>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <input asp-for="Text_Three" class="form-control" id="Text_Three_Input" />
+                    <span class="text-danger" id="Text_Three_Alert" style="display:none">Required!</span>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="form-group">
+                <input type="button" value="Save" onclick="Edit_HeroBanner()" class="btn btn-primary" />
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<div class="modal fade" id="successModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center" style="color: green;">
+                <i class="bi bi-hand-thumbs-up-fill" style="font-size: 30px;"></i>
+                <p style="margin-bottom: 0;font-size: 23px;">@TempData["SuccessMessage"]</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Form Validation Script -->
+<script>
+    function Edit_HeroBanner() {
+        var Text_One_Input = document.getElementById('Text_One_Input').value.trim();
+        var Text_One_Alert = document.getElementById('Text_One_Alert');
+
+        var Text_Two_Input = document.getElementById('Text_Two_Input').value.trim();
+        var Text_Two_Alert = document.getElementById('Text_Two_Alert');
+
+        var Text_Three_Input = document.getElementById('Text_Three_Input').value.trim();
+        var Text_Three_Alert = document.getElementById('Text_Three_Alert');
+
+        
+
+
+        var valid = true;
+
+        if (Text_One_Input === '') { Text_One_Alert.style.display = 'block';  valid = false;  }
+        else {  Text_One_Alert.style.display = 'none'; }
+
+        if (Text_Two_Input === '') { Text_Two_Alert.style.display = 'block'; valid = false;  }
+        else { Text_Two_Alert.style.display = 'none';  }
+
+        if (Text_Three_Input === '') { Text_Three_Alert.style.display = 'block'; valid = false;  }
+        else { Text_Three_Alert.style.display = 'none';  }
+
+
+        if (valid)
+        {
+            document.getElementById('Edit_HeroBanner_Form').submit();
+        }
+    }
+
+
+
+
+
+
+
+
+    document.getElementById('Text_One_Input').addEventListener('input', function () {
+        var Text_One_Alert = document.getElementById('Text_One_Alert');
+        if (this.value.trim() !== '') {
+            Text_One_Alert.style.display = 'none';
+        }
+    });
+
+    document.getElementById('Text_Two_Input').addEventListener('input', function () {
+        var Text_Two_Alert = document.getElementById('Text_Two_Alert');
+        if (this.value.trim() !== '') {
+            Text_Two_Alert.style.display = 'none';
+        }
+    });
+
+     document.getElementById('Text_Three_Input').addEventListener('input', function () {
+        var Text_Three_Alert = document.getElementById('Text_Three_Alert');
+        if (this.value.trim() !== '') {
+            Text_Three_Alert.style.display = 'none';
+        }
+    });
+</script>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var myModal = new bootstrap.Modal(document.getElementById('successModal'));
+            myModal.show();
+
+            setTimeout(function () {
+                myModal.hide();
+            }, 3000); // 3 ثواني
+        });
+    </script>
+}

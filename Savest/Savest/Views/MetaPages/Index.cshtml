@@ -29,11 +29,11 @@
                 <tr>
                     <th style="background-color: #1d1919;color: white;vertical-align: middle;">Page</th>
                     <th style="background-color: #1d1919;color: white;vertical-align: middle;">En Page Title	</th>
-                    <th style="background-color: #1d1919;color: white;vertical-align: middle;">Ar Page Title	</th>
+                    @* <th style="background-color: #1d1919;color: white;vertical-align: middle;">Ar Page Title	</th> *@
                     <th style="background-color: #1d1919;color: white;vertical-align: middle;">En Meta Title	</th>
-                    <th style="background-color: #1d1919;color: white;vertical-align: middle;">Ar Meta Title</th>
-                    <th style="background-color: #1d1919;color: white;vertical-align: middle;">En Meta Description</th>
-                    <th style="background-color: #1d1919;color: white;vertical-align: middle;">Ar Meta Description</th>
+                    @* <th style="background-color: #1d1919;color: white;vertical-align: middle;">Ar Meta Title</th> *@
+                    <th style="background-color: #1d1919;color: white;vertical-align: middle;width: 40%;">En Meta Description</th>
+                    @* <th style="background-color: #1d1919;color: white;vertical-align: middle;">Ar Meta Description</th> *@
                     <th style="background-color: #1d1919;color: white;vertical-align: middle;"></th>
                 </tr>
             </thead>
@@ -43,11 +43,11 @@
                     <tr>
                         <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.Page</td>
                         <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.EnPageTitle</td>
-                        <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.ArPageTitle</td>
+                        @* <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.ArPageTitle</td> *@
                         <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.EnMetaTitle</td>
-                        <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.ArMetaTitle</td>
+                        @* <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.ArMetaTitle</td> *@
                         <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.EnMetaDescription</td>
-                        <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.ArMetaDescription</td>
+                        @* <td style="background-color: #e9ecef;vertical-align: middle;">@MetaPages.ArMetaDescription</td> *@
                         <td class="text-end" style="background-color: #e9ecef;vertical-align: middle;">
                             <a asp-action="Edit" asp-route-id="@MetaPages.Id" class="btn btn-success btn-sm me-1">Edit</a>
                         </td>

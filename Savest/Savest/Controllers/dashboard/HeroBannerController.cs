@@ -109,7 +109,10 @@ namespace Savest.Controllers.Dashboard
 
                 var result = await _HeroBannerServices.UpdateHeroBanner(model);
                 if (result)
-                    return RedirectToAction("Index");
+                {
+                    TempData["SuccessMessage"] = "Edited Successfully";
+                    return RedirectToAction("Edit", "HeroBanner", new { id = 1 });
+                }
 
                 ModelState.AddModelError("", "Unable to update HeroBanner.");
             }
